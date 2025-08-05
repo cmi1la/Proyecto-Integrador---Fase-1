@@ -1,22 +1,22 @@
 var productos = [
   {
-    nombre: "Auriculares Bluetooth XYZ-100",
-    precio: 49.99,
-    stock: 120,
-    marca: "SoundPro",
+    nombre: "Airpods 4",
+    precio: 129.99,
+    stock: "Disponible",
+    marca: "Apple",
     categoria: "Audio",
-    detalles: "Auriculares inalámbricos con cancelación de ruido, 20 h de batería y carga rápida USB-C.",
-    foto: "../assets/foto-auricular.png",
+    detalles: "Auriculares inalámbricos con cancelación de ruido, 5 h de audio y carga rápida USB-C.",
+    foto: "../assets/airpods.png",
     envio: true           // ofrece envío
   },
   {
-    nombre: "Teclado Mecánico K85",
-    precio: 89.9,
-    stock: 60,
-    marca: "KeyMasters",
-    categoria: "Periféricos",
-    detalles: "Switches rojos lineales, retroiluminación RGB personalizable, carcasa de aluminio.",
-    foto: "https://m.media-amazon.com/images/I/419qSHJF7ML._QL92_SH45_SS200_.jpg",
+    nombre: "MacBook Air",
+    precio: 799.99,
+    stock: "Disponible",
+    marca: "Apple",
+    categoria: "Laptop",
+    detalles: "Pantallas con resolución de 2560 x 1600 píxeles, 8, 16 o 24 GB de memoria unificada.",
+    foto: "../assets/macbook.png",
     envio: true
   },
   {
@@ -26,7 +26,7 @@ var productos = [
     marca: "FitLife",
     categoria: "Wearables",
     detalles: "Pantalla AMOLED 1.4″, monitoreo de SpO2 y frecuencia cardíaca, resistencia al agua 5 ATM.",
-    foto: "https://http2.mlstatic.com/D_NQ_NP_657030-MLA47575209532_092021-O.webp",
+    foto: "../assets/auricularesjbl.png",
     envio: true
   },
   {
