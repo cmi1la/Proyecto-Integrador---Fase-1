@@ -1,11 +1,3 @@
-// -------------------------------------
-//         variables globales
-// -------------------------------------
-
-
-// -------------------------------------
-//         funciones globales
-// -------------------------------------
 function representarCardsProductos() {
     let cards = ''
     
@@ -21,7 +13,7 @@ function representarCardsProductos() {
                         <p><b>Categoría:</b> ${producto.categoria}</p>
                         <p><b>Detalles:</b> ${producto.detalles}</p>
                         <br>
-                        <p><b style="color:gold;">Envío:</b> ${producto.envio? 'Si':'No'}</p>
+                        <p><b style="color:black;">Envío:</b> ${producto.envio? 'Si':'No'}</p>
                       </section>`
         }
     }
