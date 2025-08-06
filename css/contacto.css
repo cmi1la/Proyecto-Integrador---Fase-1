@@ -32,8 +32,16 @@ main {
 }
 
 .comentarios {
-    width: 580px;
+    width: 65vh;
     height: 82px;
+    /* width: 100%; */
+    max-width: 65vh;
+    padding: 10px;
+    font-size: 16px;
+    resize: horizontal;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
 }
 
 .contenedor {
@@ -51,6 +59,7 @@ main {
 
 .contenedor .titulo {
     padding-left: 30px;
+    padding-bottom: 0;
     font-size: 25px;
     font-weight: 500;
     text-decoration: underline rgb(187, 203, 218);
@@ -134,7 +143,7 @@ footer {
   color: white;
   text-align: center;
   padding: 15px 0;
-  height: 25px;
+  height: 50px;
   line-height: 25px;
   font-size: 13px;
 }
