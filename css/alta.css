@@ -1,3 +1,7 @@
+/* ---------- Fonts ----------- */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+/* ---------------------------- */
+
 main {
     height: auto;
     padding: 20px;
@@ -6,31 +10,43 @@ main {
 
 main h1 {
     text-align: center;
+    font-family: "Oswald", sans-serif;
+
 }
 
 /*  ------- Maquetado del formulario ------ */
 .alta-form {
-    background-color: #b63625;
-    width: 80%;
+    background-color: white;
+    width: 50%;
     margin: 20px auto;
     padding: 30px;
     color: white;
-    border-radius: 20px;
-    border: 1px dashed yellow;
+    border-radius: 20px; 
+    border: 1px solid rgb(177, 177, 177);
 
     /* display: none; */  /* sólo para pruebas */
+}
+
+.textarea {
+    width: 75%;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 3px;
+    background-color:#acbeca;
+    border: 2px solid black;
 }
 
 .input-group {
     /* border: 1px solid cyan; */
     padding: 3px;
-    text-align: center;
+    text-align: left;
 }
 
 main label {
-    color: #badc58;
+    color: black;
     text-transform: capitalize;
     display: block;
+    text-align: left;
     margin-bottom: 5px;
     /* border: 1px solid yellow; */
 }
@@ -47,18 +63,23 @@ main button {
 
     height: 40px;
     width: 40%;
-    background-color:#6ab04c;
-    color: #130f40;
+    background-color:#9e9e9e;
+    color: black;
     font-size: 20px;
     border-radius: 5px;
 }
 
 main input {
-    width: 70%;
-    height: 30px;
+    width: 75%;
+    height: 35px;
     font-size: 20px;
-    border-radius: 5px;
-    background-color:#95afc0;
+    border-radius: 3px;
+    background-color:#acbeca;
+}
+
+main input:hover {
+    background-color: #7e8a92;
+    color: black;
 }
 
 main input[type="checkbox"] {
@@ -94,6 +115,8 @@ td {
 main h2 {
     text-align: center;
 }
+
+
 
 
 

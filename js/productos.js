@@ -1,6 +1,6 @@
 var productos = [
   {
-    nombre: "Airpods 4",
+    nombre: "AirPods 4",
     precio: 129.99,
     stock: "Disponible",
     marca: "Apple",
@@ -20,33 +20,33 @@ var productos = [
     envio: true
   },
   {
-    nombre: "Smartwatch FitLife S2",
-    precio: 129.5,
-    stock: 35,
-    marca: "FitLife",
-    categoria: "Wearables",
-    detalles: "Pantalla AMOLED 1.4″, monitoreo de SpO2 y frecuencia cardíaca, resistencia al agua 5 ATM.",
+    nombre: "JBL Tune",
+    precio: 39.99,
+    stock: "Disponible",
+    marca: "JBL",
+    categoria: "Audio",
+    detalles: "Cancelación de ruido activa, duración de batería prolongada, y resistencia al agua y al polvo.",
     foto: "../assets/auricularesjbl.png",
     envio: true
   },
   {
-    nombre: "Cámara IP 360° HomeGuard",
-    precio: 59.0,
-    stock: 85,
-    marca: "SecureCam",
-    categoria: "Seguridad",
-    detalles: "Resolución 2 K, visión nocturna, seguimiento automático y almacenamiento en la nube.",
-    foto: "https://thumbs.ielectro.es/product/med/98833.webp",
+    nombre: "IPhone 15 Pro",
+    precio: 749.99,
+    stock: "No disponible",
+    marca: "Apple",
+    categoria: "Celular",
+    detalles: "Pantalla Super Retina XDR de 6.1 pulgadas con tecnología ProMotion y resolución de 2556 por 1179 píxeles.",
+    foto: "../assets/iphone15.png",
     envio: false          // solo retiro en tienda
   },
   {
-    nombre: "Robot Aspirador CleanBot V5",
-    precio: 239.99,
-    stock: 18,
-    marca: "CleanTech",
-    categoria: "Electrodomésticos",
-    detalles: "Mapeo láser, control por app, autonomía de 120 min, compatible con Alexa y Google Home.",
-    foto: "https://http2.mlstatic.com/D_619670-MLA80556633836_112024-C.jpg",
+    nombre: "Teclado Blackwidow",
+    precio: 249.99,
+    stock: "Disponible",
+    marca: "Razer",
+    categoria: "Teclado",
+    detalles: "Ofrece switches mecánicos Razer con diferentes sensaciones al tacto e iluminación Razer Chroma RGB personalizable.",
+    foto: "../assets/teclado.png",
     envio: true
   }
 ];
