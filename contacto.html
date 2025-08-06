@@ -10,18 +10,8 @@
 <body>
     
     <header>
-        <nav>
-            <ul>
-                <li> <a href="./index.html">Inicio</a> </li>
-                <li> <a href="./alta.html">Alta</a> </li>
-                <li> <a href="./carrito.html">Carrito</a> </li>
-                <li> <a href="./contacto.html">Contacto</a> </li>
-                <li> <a href="./nosotros.html">Nosotros</a> </li>
-                <li> <a href="./otra.html">Otra</a> </li>
-            </ul>
-        </nav>
         <div>
-            <div id="logo">Logo</div>
+            <div id="logo">ECommerce Store</div>
             <div id="barra-busqueda">
                 <form action="#">
                     <label for="buscar">Buscar</label>
@@ -31,14 +21,67 @@
             </div>
             <div id="boton-carrito">C</div>
         </div>
+        <nav>
+            <ul>
+                <li> <a href="./index.html">Inicio</a> </li>
+                <li> <a href="./alta.html">Alta</a> </li>
+                <li> <a href="./carrito.html">Carrito</a> </li>
+                <li> <a href="./contacto.html">Contacto</a> </li>
+                <li> <a href="./nosotros.html">Nosotros</a> </li>
+                <li> <a href="./otra.html">Otra</a> </li>
+            </ul>
+        </nav>        
     </header>
 
     <main>
-        <h1>Formulario de Contacto</h1>
+        <!-- <h1>Formulario de Contacto</h1> -->
+
+        <div class="contenedor">
+
+            <div class="titulo">Formulario de Contacto</div>
+            <div class="contenido">
+
+                <form action="#" class="contacto-form">
+                    <div class="detalles-user">
+
+                        <div class="caja-input">
+                            <span class="detalles">Nombre</span>
+                            <input type="text" placeholder="Ingrese su nombre..." required>
+                        </div>
+
+                        <div class="caja-input">
+                            <span class="detalles">Apellido</span>
+                            <input type="text" placeholder="Ingrese su apellido..." required>
+                        </div>
+
+                        <div class="caja-input">
+                            <span class="detalles">Email</span>
+                            <input type="text" placeholder="Ingrese su email..." required>
+                        </div>
+
+                        <div class="caja-input">
+                            <span class="detalles">Numero de Telefono</span>
+                            <input type="text" placeholder="Ingrese su nombre..." required>
+                        </div>
+
+                        <div class="caja-input">
+                            <span class="detalles">Comentarios</span>
+                            <textarea class="comentarios" name="comentarios" id="comentarios"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="boton">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </div> 
     </main>
 
-    <footer>
-        <h3>Copyright 2025</h3>
+    
+
+    <footer >
+        <h3>© 2025 ECommerce - Todos los derechos reservados</h3>
     </footer>
 
     <script src="js/contacto.js"></script>
