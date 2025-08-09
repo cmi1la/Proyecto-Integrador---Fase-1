@@ -101,3 +101,65 @@ function start() {
 
     representarTablaProductos()
 }
+
+/* let popup = document.getElementById("popup");*/
+
+/* function abrirPopup() {
+    popup.classList.add("abrir-popup");
+}
+
+function cerrarPopup() {
+    popup.classList.remove("abrir-popup");
+} 
+
+let popup = document.getElementById("popup");
+let form = document.getElementById("alta-form");
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault(); 
+
+    if (form.checkValidity()) {
+        abrirPopup();
+    } else {
+        form.reportValidity();
+    }
+});
+
+function abrirPopup() {
+    popup.classList.add("abrir-popup");
+}
+
+function cerrarPopup() {
+    popup.classList.remove("abrir-popup");
+} */
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('alta-form');
+  const popup = document.getElementById('popup');
+  const cerrarBtn = document.getElementById('cerrarBtn');
+
+  form.addEventListener('submit', function (e) {
+    if (!form.checkValidity()) {
+      e.preventDefault();
+      form.reportValidity();
+      return;
+    }
+
+    e.preventDefault();
+    popup.classList.add('abrir-popup');
+    popup.setAttribute('aria-hidden', 'false');
+  });
+
+  cerrarBtn.addEventListener('click', function () {
+    popup.classList.remove('abrir-popup');
+    popup.setAttribute('aria-hidden', 'true');
+  });
+});
+
+let form = document.getElementById("alta-form");
+
+function cerrarPopup() {
+    popup.classList.remove("abrir-popup");
+    form.reset()
+}

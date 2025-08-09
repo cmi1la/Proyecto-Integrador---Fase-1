@@ -37,7 +37,7 @@ main h1 {
     height: 35px;
     font-size: 20px;
     border-radius: 3px;
-    background-color:#acbeca;
+    background-color:#dde8f0;
     border: 2px solid black;
 }
 
@@ -67,7 +67,7 @@ main button {
     margin: 15px auto;
 
     height: 40px;
-    width: 40%;
+    width: auto;
     background: #ccf1ff;
     background: linear-gradient(180deg,rgba(204, 241, 255, 1) 0%, rgba(179, 211, 245, 1) 50%, rgb(214, 247, 252) 100%);
     color: black;
@@ -80,11 +80,11 @@ main input {
     height: 35px;
     font-size: 20px;
     border-radius: 3px;
-    background-color:#acbeca;
+    background-color:#dde8f0;
 }
 
 main input:hover {
-    background-color: #b0d4ec;
+    background-color: #aec5d4;
     color: black;
 }
 
@@ -104,6 +104,8 @@ th,td {
 table {
     border-collapse: collapse;
     margin: 5px auto;
+    width: 100%;
+    display: none;
     /* border: 1px solid magenta; */
 }
 
@@ -122,6 +124,43 @@ main h2 {
     text-align: center;
 }
 
+.popup {
+    width: 400px;
+    background: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: black;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.abrir-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup h2 {
+    color: black;
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
 
 
 

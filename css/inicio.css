@@ -4,7 +4,7 @@
 /* ---------------------------- */
 
 main {
-    width: 100%;
+    width: auto;
     height: auto;
     background: #bdc3c7;
     background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
@@ -15,7 +15,6 @@ main {
 }
 
 section img {
-    width: 150px;
     margin-bottom: 20px;
     margin-left: 50px;
     text-align: center;
@@ -38,7 +37,7 @@ main .section-cards-body {
 }
 
 section {
-    border: 1px solid black;
+   /*  border: 1px solid black; */
     font-family: "Outfit", sans-serif;
     text-align: left;
     width: 250px;
@@ -46,6 +45,7 @@ section {
     background-color:whitesmoke;
     color: black;
     margin: 15px;
+    border-radius: 10px;
 }
 
 section img {
@@ -70,4 +70,21 @@ section h3 {
 section p {
     /* text-align: left; */
     margin-bottom: 10px;
+}
+
+#boton-carrito {
+    height: 80px;
+    width: 5%;
+    background-color:grey;
+    text-align: center;
+    line-height: 80px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.carrito {
+    width: 30px;
+    position: relative;
+    object-fit: contain;
 }

@@ -103,6 +103,14 @@ header > div {
     text-align: center;
     line-height: 80px;
     font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.carrito {
+    width: 30px;
+    position: relative;
+    object-fit: contain;
 }
 
 #barra-busqueda form {
