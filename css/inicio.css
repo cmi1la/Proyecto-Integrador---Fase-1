@@ -36,6 +36,12 @@ section {
     margin: 15px;
     border-radius: 10px;
     box-shadow: 3px 3px gray;
+    position: relative;
+}
+
+section:hover {
+    transform: scale(1.1);
+        transition: 1s;
 }
 
 section img {

@@ -102,37 +102,6 @@ function start() {
     representarTablaProductos()
 }
 
-/* let popup = document.getElementById("popup");*/
-
-/* function abrirPopup() {
-    popup.classList.add("abrir-popup");
-}
-
-function cerrarPopup() {
-    popup.classList.remove("abrir-popup");
-} 
-
-let popup = document.getElementById("popup");
-let form = document.getElementById("alta-form");
-
-form.addEventListener("submit", function(e) {
-    e.preventDefault(); 
-
-    if (form.checkValidity()) {
-        abrirPopup();
-    } else {
-        form.reportValidity();
-    }
-});
-
-function abrirPopup() {
-    popup.classList.add("abrir-popup");
-}
-
-function cerrarPopup() {
-    popup.classList.remove("abrir-popup");
-} */
-
 
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('alta-form');

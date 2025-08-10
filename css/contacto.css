@@ -8,7 +8,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -18,11 +17,13 @@ body {
     align-items: center;
     background: #7289a8;
     background: radial-gradient(circle,rgba(114, 137, 168, 1) 0%, rgba(216, 221, 232, 1) 100%, rgba(148, 187, 233, 1) 100%);
-    font-family: "Oswald", sans-serif;
 }
+
+
 
 main {
     padding: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .contacto-form {
@@ -146,4 +147,12 @@ footer {
   height: 50px;
   line-height: 25px;
   font-size: 13px;
+}
+
+#barra-busqueda form input {
+    background-color: white;
+    width: 51%;
+    height: 65%;
+    color: white;
+    margin: 1px;
 }

@@ -1,16 +1,25 @@
 /* ---------- Fonts ----------- */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* ---------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;    
+}
 
 body {
     background: #cdccff;
-    background: radial-gradient(circle,rgb(175, 174, 223) 0%, rgb(90, 117, 148) 50%, rgb(248, 247, 247) 100%);
+    background: radial-gradient(circle,rgb(175, 174, 223) 0%, rgb(90, 117, 148) 50%, rgb(248, 247, 247) 100%);    
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
     height: auto;
     padding: 20px;
-    /* background-color: #ddd; */
+    font-family: 'Poppins', sans-serif;
 }
 
 main h1 {
@@ -20,40 +29,102 @@ main h1 {
 }
 
 /*  ------- Maquetado del formulario ------ */
-.alta-form {
-    background-color: white;
-    width: 50%;
-    margin: 20px auto;
+
+.contenedor {
+    max-width: 900px;
     padding: 30px;
-    color: white;
-    border-radius: 20px; 
-    border: 1px solid rgb(177, 177, 177);
-
-    /* display: none; */  /* sólo para pruebas */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+    margin-top: 45px;
+    background: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.textarea {
-    width: 75%;
-    height: 35px;
+.contenedor header {
+    position: relative;
     font-size: 20px;
-    border-radius: 3px;
-    background-color:#dde8f0;
-    border: 2px solid black;
+    font-weight: 600;
+    color: #333;
 }
 
-.input-group {
-    /* border: 1px solid cyan; */
-    padding: 3px;
-    text-align: left;
+.contenedor header::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px;
+    background-color: #7d92a0;
 }
 
-main label {
-    color: black;
-    text-transform: capitalize;
+.contenedor form {
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    background-color: white;
+}
+
+.contenedor form .detalles {
+    margin-top: 30px;
+}
+
+.contenedor form .detalles-adicionales {
+    margin-top: 10px;
+}
+
+.contenedor form .titulo {
     display: block;
-    text-align: left;
-    margin-bottom: 5px;
-    /* border: 1px solid yellow; */
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+}
+
+.contenedor form .campos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .campos .campo-input {
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.campo-input label {
+    font-size: 15px;
+    font-weight: 500;
+    color: #525252;
+}
+
+.campo-input input {  
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 0 15px;
+    height: 35px;
+    margin: 8px 0;
+}
+
+.campo-input input:is(:focus, :valid) {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-submit {
+    width: 100px;
 }
 
 main label[for="envio"] {
@@ -62,12 +133,9 @@ main label[for="envio"] {
 }
 
 main button {
-    /* text-align: center; */
     display: block;
-    margin: 15px auto;
-
+    margin: 15px 40px auto;
     height: 40px;
-    width: auto;
     background: #ccf1ff;
     background: linear-gradient(180deg,rgba(204, 241, 255, 1) 0%, rgba(179, 211, 245, 1) 50%, rgb(214, 247, 252) 100%);
     color: black;
@@ -93,36 +161,22 @@ main input[type="checkbox"] {
     height: 20px;
 }
 
-/*  ------- Maquetado de la tabla ------ */
-th,td {
-    border: 1px solid black;
-    width: 100px;
-    height: 40px;
-    padding: 10px;
-}
-
-table {
-    border-collapse: collapse;
-    margin: 5px auto;
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    display: none;
-    /* border: 1px solid magenta; */
-}
-
-th {
-    text-transform: uppercase;
-    background-color: #111;
+    height: 3rem;
+    background-color: black;
     color: white;
-    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
 }
-
-td {
-    font-size: 18px;
-}
-
-main h2 {
-    text-align: center;
-}
+ 
+/* ---------------------------------------- */
 
 .popup {
     width: 400px;
@@ -141,7 +195,7 @@ main h2 {
 
 .abrir-popup {
     visibility: visible;
-    top: 70%;
+    top: 50%;
     transform: translate(-50%, -50%) scale(1);
     border: 1px solid black;
 }
@@ -156,11 +210,14 @@ main h2 {
 .popup button {
     width: 100%;
     margin-top: 50px;
-    padding: 10px 0;
     font-size: 18px;
     border-radius: 4px;
     cursor: pointer;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup-btn {
+    margin: 0;
 }
 
 
