@@ -19,15 +19,12 @@ body {
     background: radial-gradient(circle,rgba(114, 137, 168, 1) 0%, rgba(216, 221, 232, 1) 100%, rgba(148, 187, 233, 1) 100%);
 }
 
-
-
 main {
     padding: 20px;
     font-family: 'Poppins', sans-serif;
 }
 
 .contacto-form {
-    /* width: 50%; */
     margin: 20px auto;
     padding: 30px;
 }
@@ -35,7 +32,6 @@ main {
 .comentarios {
     width: 65vh;
     height: 82px;
-    /* width: 100%; */
     max-width: 65vh;
     padding: 10px;
     font-size: 16px;
@@ -124,7 +120,6 @@ form .boton input:hover {
 
 form .detalles-user .caja-input {
     margin-bottom: 15px;
-   /*  width: 100%; */
 }
 
 .contenedor form .detalles-user {
